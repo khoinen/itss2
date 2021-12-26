@@ -25,6 +25,13 @@
     justify-content: center;
     padding-left: 80px;
 }
+.input-form input{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.form-right{
+    margin-left: 50px
+}
 .form-right img {
     width: 700px;
     height: 500px;
