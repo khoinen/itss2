@@ -47,13 +47,13 @@ ul{
 } 
 .flashcard{
     width: 860px;
-    perspective: 1000px;
+    perspective: 10000px;
 }
 .flashcard-inner{
     position: relative;
     width: 100%;
     height: 502px;
-    transition: transform 0s;
+    transition: transform 0.5s;
     border: 1px solid gray;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -69,7 +69,6 @@ ul{
     transform: rotateY(180deg);
 }
 .card-front .card-body{
-    width: 100%;
     height: 430px;
     font-size: 60px;
     display: flex;
