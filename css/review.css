@@ -8,8 +8,6 @@ ul{
     list-style: none;
 }
 .navbar{
-    position: absolute;
-    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -22,8 +20,8 @@ ul{
     align-items: center;
 }
 .navbar img {
-    width: 130px;
-    height: 90px;
+    width: 150px;
+    height: 60px;
 }
 .nav-menu {
     display: flex;
@@ -35,5 +33,73 @@ ul{
     margin: 20px;
     font-size: 20px;
     padding: 10px;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px 50px; 
+}
+.container .slider-left img, .slider-right img{
+    height: 100px;
+    width: 100px;
+} 
+.flashcard{
+    width: 860px;
+    perspective: 1000px;
+}
+.flashcard-inner{
+    position: relative;
+    width: 100%;
+    height: 502px;
+    transition: transform 0s;
+    border: 1px solid gray;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}  
+.card-back{
+    transform: rotateY(180deg);
+}
+.card-front .card-body{
+    width: 100%;
+    height: 430px;
+    font-size: 60px;
+    display: flex;
+    padding-top: 160px;
+    justify-content: center;
+}
+.card-back .card-body{
+    width: 100%;
+    height: 430px;
+    padding-left: 50px;
+}
+.card-back .card-body p {
+    font-size: 20px;
+    line-height: 40px;
+    
+}
+.card-show-hide{
+    width: 100%;
+    height: 70px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-show-hide button{
+    background-color: #519CF5;
+    border: none;
+    color: white;
+    padding: 6px 20px;
+    font-size: 20px;
+    border-radius: 4px;
     cursor: pointer;
 }

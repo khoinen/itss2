@@ -25,12 +25,52 @@
                 </ul>
             </div>
             <div class="profile-icon">
-                <i class="far fa-user-circle" style="font-size: 50px;;"></i>
+                <i class="far fa-user-circle" style="font-size: 50px;cursor: pointer;"></i>
             </div>
         </nav>
     </div>
-    <div class="container">
-        
-    </div>
+    <section class="container">
+        <div class="slider-left">
+            <img src="./img/Red_arrow_png7- 1.png" alt="slider-left">
+        </div>
+        <div class="flashcard">
+            <div class="flashcard-inner">
+                <div class="card-front">
+                    <div class="card-body">
+                        <p>海豚</p>
+                    </div>
+                    <div class="card-show-hide">
+                        <button type="button" class="show-hide" onclick="flip()">Show answer</button>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="card-body">
+                        <div class="answer-display">
+                            <p><span style="font-weight: bold;">Meaning: </span>dolphine</p>
+                            <p><span style="font-weight: bold;">読み方: </span>いるか </p>
+                            <p><span style="font-weight: bold;">Picture: </span> </p>
+                        </div>
+                        <img src="./img/image 3.png" alt="dolphin">
+                    </div>
+                    <div class="card-show-hide">
+                        <button type="button" class="show-hide" onclick="flipBack()">Hide answer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-right">
+            <img src="./img/Red_arrow_png7- 2.png" alt="slider-right">
+        </div>
+    </section>
+    <script>
+        function flip() {
+            document.querySelector('.flashcard-inner').style.transform = 'rotateY(180deg)';
+        }
+    </script>
+    <script>
+        function flipBack() {
+            document.querySelector('.flashcard-inner').style.transform = 'rotateY(0deg)';
+        }
+    </script>
 </body>
 </html>
